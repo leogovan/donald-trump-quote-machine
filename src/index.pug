@@ -1,2 +1,37 @@
-h1
-	a(href="#") Hello World!
+doctype html
+html(lang="en")
+	head
+		title Random Quote Machine
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(href="css/main.css" type="text/css" rel="stylesheet")
+	body.body-background-colour.container
+		div.row
+			header(class="twelve columns")
+				h2 Donald Trump Random Quote Machine
+		div.main.row
+			div.input-form(class="twelve columns")
+				form
+					label(for="first-name") First Name:
+					input(type="text" name="first_name" id="first-name")
+					label(for="last-name") Last Name:
+					input(type="text" name="last_name" id="last-name")
+			div.quote-container
+				p.quote
+			div.quoted-person-container
+				p.quoted-person
+			div.interactive-page-controls
+				div.social-section
+					ul
+						li.display-inline
+							a(class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large") Tweet
+						//li.display-inline
+							button facebook
+				div.quote-button-section
+					button.quote-me Quote Me!
+		footer
+			p All quotes provided by the Donald, via 
+				a(href="https://whatdoestrumpthink.com" target="_blank") What Does Trump Think.
+		script(async src="//platform.twitter.com/widgets.js" charset="utf-8")
+		script(src="js/app.js")

@@ -1,0 +1,19 @@
+/* Outline helper - to see the boundraies of my various elements. Comment/uncomment as needed */
+
+* {
+  outline: 1px solid red !important;
+}
+
+/*
+.body-background-colour {
+	background-color: #bbff00;
+}
+*/
+.centre-on-page-content {
+	display: flex;
+	justify-content: center;
+}
+
+.display-inline {
+	display: inline;
+}
