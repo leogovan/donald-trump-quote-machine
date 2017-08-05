@@ -1,0 +1,23 @@
+.testing {
+  width: 71.42857%;
+  color: #32cd32; }
+
+/* Outline helper - to see the boundraies of my various elements. Comment/uncomment as needed */
+* {
+  outline: 1px solid red !important; }
+
+/*
+.body-background-colour {
+	background-color: #bbff00;
+}
+*/
+.centre-on-page-content {
+  display: flex;
+  justify-content: center; }
+
+.display-inline {
+  display: inline; }
+
+/* comment to test style.scss gets written to src/css/style.css... did it? Just did another change*/
+.bums {
+  color: brown; }

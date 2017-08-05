@@ -1,3 +1,11 @@
+// styles.scss
+$colourtest: #32cd32;
+
+.testing {
+  width: percentage(5/7);
+  color: $colourtest;
+}
+
 /* Outline helper - to see the boundraies of my various elements. Comment/uncomment as needed */
 
 * {
@@ -16,4 +24,10 @@
 
 .display-inline {
 	display: inline;
+}
+
+/* comment to test style.scss gets written to src/css/style.css... did it? Just did another change*/
+
+.bums {
+	color: brown;
 }

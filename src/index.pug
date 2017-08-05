@@ -5,7 +5,8 @@ html(lang="en")
 		meta(charset="utf-8")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
-		link(href="css/main.css" type="text/css" rel="stylesheet")
+		link(href="css/style.css" rel="stylesheet")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css")
 	body.body-background-colour.container
 		div.row
 			header(class="twelve columns")
@@ -22,16 +23,14 @@ html(lang="en")
 			div.quoted-person-container
 				p.quoted-person
 			div.interactive-page-controls
-				div.social-section
-					ul
-						li.display-inline
-							a(class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large") Tweet
-						//li.display-inline
-							button facebook
 				div.quote-button-section
 					button.quote-me Quote Me!
+				div.social-section
+					a(class="twitter-share-button" href="https://twitter.com/share" data-size="large")
+						button(type="button") Tweety
 		footer
 			p All quotes provided by the Donald, via 
 				a(href="https://whatdoestrumpthink.com" target="_blank") What Does Trump Think.
-		script(async src="//platform.twitter.com/widgets.js" charset="utf-8")
+		// script(async src="//platform.twitter.com/widgets.js" charset="utf-8")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 		script(src="js/app.js")
