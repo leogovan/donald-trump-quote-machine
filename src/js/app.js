@@ -21,15 +21,10 @@ $(document).ready(function() {
 				quoteTest = data.message;
 				console.log("I am quoteTest INSIDE ajax call: " + quoteTest);
 				$(".quote").html(quoteTest);
-				$(".quoted-person").html("<p>Donald Trump said this!</p>");
-				//$(".twitter-share-button").attr("href", "https://twitter.com/intent/tweet?text=" + data.message);
-				//console.log("I am testTwitter: " + $(".twitter-share-button").attr("data-text"));
-				//console.log("I am data.message: " + data.message);
 			}
 		});
 	});
 });
-
 
 $(".twitter-share-button").click(function() {
 	console.log(this);

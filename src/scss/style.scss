@@ -1,33 +1,132 @@
-// styles.scss
-$colourtest: #32cd32;
 
-.testing {
-  width: percentage(5/7);
-  color: $colourtest;
-}
+// Colour variables
+$deep-green: #0f1b07;
+$grey: #b7b8b6;
+$light-grey: #f0f0f0;
+$plants-green: #5c821a;
+$new-growth-green: #c6d166;
+$pine: #34675c;
+$green: #b3c100;
+$white: #FFFFFF;
+
+// Font Size variables
+$section-heading: 24px;
+$quote-text: 20px;
+$button-text: 16px;
+$body-text: 14px;
+
+// Border Radius variables
+$radius-one: 5px;
+$radius-two: 10px;
+
+$font-family: 'Roboto', sans-serif;
+
+
 
 /* Outline helper - to see the boundraies of my various elements. Comment/uncomment as needed */
-
 * {
-  outline: 1px solid red !important;
+  //outline: 1px solid red !important;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: $font-family;
+  max-width: 100%;
 }
 
-/*
-.body-background-colour {
-	background-color: #bbff00;
+input {
+	margin-bottom: 30px;
+	margin-top: 20px;
+	height: 30px;
+	width: 180px;
+	text-indent: 10px;
+	border-radius: $radius-one;
 }
-*/
-.centre-on-page-content {
+
+p {
+	text-align: center;
+}
+
+.title-bar-top, .footer-bar-top {
+	background: $deep-green;
+}
+
+.title-bar-inside, .footer-bar-inside {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.title-bar-text {
+	font-size: $section-heading;
+	font-weight: 100;
+	color: $white;
+}
+
+.footer-bar-text {
+	font-size: $body-text;
+	font-weight: 300;
+	color: $white;
+}
+
+.quote {
+	font-size: $quote-text;
+	font-weight: 700;
+	color: $white;
+}
+
+.btn {
+	letter-spacing: 0;
+	font-size: $button-text;
+	text-transform: capitalize;
+	font-weight: 300;
+	margin-left: 2%;
+	line-height: 1.5em;
+	color: $white;
+	background: $green;
+	border: 1px solid $white;
+	border-radius: $radius-one;
+	width: 30%;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+  	background-color: $light-grey;
+	font-size: $body-text;
+}
+
+.enter-name-section {
+	max-width: 50%;
+	margin: 80px auto;
+	background-color: $new-growth-green;
+	padding: 20px;
+	border-radius: $radius-two;
+	height: 150px;
+
+}
+
+.input-form {
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+.quote-button-section, .title-bar-inside, .footer-bar-inside, .twitter-share-button {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
-.display-inline {
-	display: inline;
+.form-fields {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
-/* comment to test style.scss gets written to src/css/style.css... did it? Just did another change*/
+.tweet-section {
+	max-width: 45%;
+	margin: 80px auto;
+	background-color: $new-growth-green;
+	padding: 20px;
+	border-radius: $radius-two;
 
-.bums {
-	color: brown;
 }

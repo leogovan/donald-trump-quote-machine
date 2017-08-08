@@ -6,31 +6,32 @@ html(lang="en")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		link(href="css/style.css" rel="stylesheet")
-		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css")
-	body.body-background-colour.container
-		div.row
-			header(class="twelve columns")
-				h2 Donald Trump Random Quote Machine
-		div.main.row
-			div.input-form(class="twelve columns")
-				form
-					label(for="first-name") First Name:
-					input(type="text" name="first_name" id="first-name")
-					label(for="last-name") Last Name:
-					input(type="text" name="last_name" id="last-name")
-			div.quote-container
-				p.quote
-			div.quoted-person-container
-				p.quoted-person
-			div.interactive-page-controls
+		//link(href="css/reset.css" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet")
+	body.container
+		section.title-bar-top
+			header.title-bar-inside
+				h2.title-bar-text Donald Trump Random Quote Machine
+		section.enter-name-section
+			div.quote-form-wrapper
+				div.input-form
+					form.form-fields
+						//label(for="first-name") First Name:
+						input(type="text" name="first_name" id="first-name" placeholder="Enter Your First Name..." required)
+						//label(for="last-name") Last Name:
+						input(type="text" name="last_name" id="last-name" placeholder="Enter Your Last Name..." required)
 				div.quote-button-section
-					button.quote-me Quote Me!
-				div.social-section
-					a(class="twitter-share-button" href="https://twitter.com/share" data-size="large")
-						button(type="button") Tweety
-		footer
-			p All quotes provided by the Donald, via 
-				a(href="https://whatdoestrumpthink.com" target="_blank") What Does Trump Think.
-		// script(async src="//platform.twitter.com/widgets.js" charset="utf-8")
+					button.quote-me.btn Quote Me!
+		section.tweet-section
+			div.quote-tweet-wrapper
+				div.quote-container
+					p.quote
+				div.tweet-button-section
+					a(class="twitter-share-button" href="https://twitter.com/share")
+						button.btn(type="button") Tweet!
+		footer.footer-bar-top
+			header.footer-bar-inside
+				p.footer-bar-text All quotes provided by the Donald, via 
+					a(href="https://whatdoestrumpthink.com" target="_blank") What Does Trump Think.
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
 		script(src="js/app.js")
