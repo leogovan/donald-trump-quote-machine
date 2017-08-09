@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i");
 /* Outline helper - to see the boundraies of my various elements. Comment/uncomment as needed */
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Space Mono", monospace;
   max-width: 100%; }
 
 input {
@@ -26,23 +27,23 @@ p {
 
 .title-bar-text {
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 700;
   color: #FFFFFF; }
 
 .footer-bar-text {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   color: #FFFFFF; }
 
 .quote {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
+  font-style: italic;
   color: #FFFFFF; }
 
 .btn {
   letter-spacing: 0;
   font-size: 16px;
-  text-transform: capitalize;
   font-weight: 300;
   margin-left: 2%;
   line-height: 1.5em;
@@ -77,7 +78,8 @@ p {
 .quote-button-section, .title-bar-inside, .footer-bar-inside, .twitter-share-button {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-decoration: none; }
 
 .form-fields {
   display: flex;
