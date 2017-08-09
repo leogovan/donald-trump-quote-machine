@@ -61,11 +61,14 @@ p {
 
 .enter-name-section {
   max-width: 50%;
-  margin: 80px auto;
+  margin: 80px auto 0px auto;
   background-color: #c6d166;
-  padding: 20px;
+  padding: 40px 10px 10px 10px;
   border-radius: 10px;
-  height: 150px; }
+  height: 200px;
+  border: 1px solid #FFFFFF;
+  position: relative;
+  z-index: 100; }
 
 .input-form {
   max-width: 85%;
@@ -83,7 +86,17 @@ p {
 
 .tweet-section {
   max-width: 45%;
-  margin: 80px auto;
+  margin: 0px auto 80px auto;
   background-color: #c6d166;
   padding: 20px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;
+  position: relative;
+  z-index: 10;
+  -webkit-transform: translateY(-200px);
+  transform: translateY(-200px); }
+
+.tweet-section.open {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  transition: transform 1.0s ease; }
